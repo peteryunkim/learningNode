@@ -1,5 +1,6 @@
 const express = require('express')
 let app = express()
+//can use express but can also use http
 
 let toDo = [
 	{
@@ -54,6 +55,7 @@ app.put('/tasks/:id', (request, response) => {
 		}
 	}
 })
+//Delete
 
 app.get('/jp', (req, res)=>{
 	res.send({name: "WOFF", system: 'Ps4'})
